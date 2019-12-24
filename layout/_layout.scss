@@ -1,0 +1,94 @@
+body{
+	background:$Red url('images/bg-intro-mobile.png');
+	padding:92px 22px 66px 22px;
+	max-width: 1440px;
+	margin:auto auto;
+	@media screen and (min-width:1000px){
+		padding: 120px 177px;
+	}
+	main{
+		display: flex;
+		flex-wrap: wrap;
+			section:nth-of-type(1){
+				margin:0 0 65px 0;
+				max-width:491px;
+				@media screen and (min-width:1386px){
+					margin: auto 0 auto auto;
+				}
+		}
+			section:nth-of-type(2){
+				max-width:541px;
+				width:100%;
+				@media screen and (min-width:1386px){
+				margin: 0 0 0 auto;
+			}
+			.button1{
+				width:100%;
+				border-radius: 10px;
+				border:none;
+				background-color: $Blue;
+			}
+			form{
+				padding:34px;
+				background:white;
+				border-radius:10px;
+				margin:24px 0 0 0;
+				input{
+					width: 95%;
+					margin:0 0 14px 0;
+					height:51px;
+					padding:0 0 0 18px;
+					border-style: solid;
+					border-width: 0.5px;
+					border-color: $GrayishBlue;
+					border-radius:5px;
+				}
+				.onFocus{
+					border-width: 2px;
+					border-color: black;	
+				}
+				.onFocusError{
+					border-color: red;
+					border-width: 2px;
+					background-image: url('images/icon-error.svg');
+					background-repeat: no-repeat;
+					background-position: center right 30px;
+				}
+				.errorMessage{
+					display:none;
+				}
+				.displayBlock{
+					display:block;
+					margin:0 0 15px 0;
+				}
+				.button2{
+					color:white;
+					text-transform: uppercase;
+					padding:18px 43px;
+					margin:0 0 13px 0;
+					width:100%;
+					border-radius: 5px;
+					border-width:0 2px 2px 0;
+					background-color: $Green;
+					font-weight: 500;
+
+				}
+				.formSpan{
+					font-size: 11px;
+					color:hsl(246, 25%, 77%);
+					text-align: center;
+					display: block;
+					line-height: 1.5;
+					a{
+						color:$Red;
+						font-size: 11px;
+						font-weight: 700;
+					}
+				}
+		}
+	}
+	}
+	
+}
+
+/*javascript style*/
